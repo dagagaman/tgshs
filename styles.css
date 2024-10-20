@@ -1,0 +1,297 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  list-style: none;
+}
+
+a img{
+  display: inline!important;
+  width: 30px;
+  height: 30px;
+}
+
+h1{
+ 
+  text-align: center;
+
+}
+
+.main-cont{
+  margin: 20px;
+}
+
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  
+}
+
+footer div{
+  width: 300px;
+}
+
+
+.container{
+  display: flex;
+  gap: 40px; 
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.container div{
+  width: 350px;  
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all .3;
+  border-radius: 20px;
+  position: relative;
+}
+
+.new{
+  position: absolute;
+  top: 10px; 
+  right: 10px;
+  background-color: green;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  padding: 2px 35px; 
+  font-family: cursive;
+  z-index: -3;
+
+}
+
+.container div:hover{
+  transform: scale(1.01); 
+}
+
+.container div h3{
+  font-weight: bold;
+  font-family: cursive,sans-serif;
+  border-bottom: 1px solid black ;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.container div p{
+  font-weight: bold;
+}
+
+.image{
+  width: 20%;
+  border-radius: 50%;
+  height: auto;
+  position: absolute;
+  top: -20px; 
+  border: 2px dotted aqua;
+  padding: 5px;   
+  box-shadow: 0 5px 10px 0 aqua;
+}
+
+.btn-link{
+  padding: 10px;
+  background-color: rgb(55, 41, 41);
+  color: rgb(239, 222, 222);
+  margin-top: 10px; 
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+.btn-link:hover{
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.image-logo{
+  width: 100%;
+  
+}
+.image-logo-2{
+  width: 100%;
+}
+.large-text{
+  /* font-size: 7vh;
+  color: #023047;
+  margin-bottom: 30px; */
+  font-size: 2em;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.txt-red{
+  color: red;
+}
+
+.logo{
+  font-weight: bolder;
+  background-color: rgb(54, 189, 189);
+  color: white;
+  word-spacing: 1.3px;
+  border-radius: 50%;
+  padding: 5px 2px;
+  margin: 2px 4px;
+}
+
+.mySlides{
+  display: flex;
+  justify-content: space-between;
+}
+
+.we-r{
+  justify-content: center;
+}
+
+.we{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:500px){
+  .we{
+    gap: 20px;  
+
+  }
+
+}
+
+img{
+  display: block;
+}
+.we div{
+  width: 300px;
+  padding: 10px;
+}
+
+.we h1{
+  text-align: center;
+  display: block;
+}
+
+.we div{
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+@media (min-width:500px){
+   .image-logo{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+   }
+}
